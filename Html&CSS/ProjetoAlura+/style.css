@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #040814;
+  --color-button: #167bf7;
+  --color-text: #ffffff;
+  --color-attention: #f06576;
+  --color-bord: #c0c0c0;
+  --font-text: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-text);
+  color: var(--color-text);
+}
+
+/* ===== PRESENTATION ===== */
+.presentation {
+  background-image: url("./assets/Background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.presentation_right {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  display: grid;
+  flex-direction: column;
+}
+
+.combo_img {
+  margin: 5%;
+  width: 90%;
+}
+
+.buttons {
+  gap: 1rem;
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.button_combo {
+  background-color: var(--color-button);
+  color: var(--color-text);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 70%;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.button_plus {
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 8px;
+  border: 1px solid var(--color-bord);
+  font-size: 1rem;
+  cursor: pointer;
+  width: 70%;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.alert {
+  font-weight: 200;
+  font-size: 0.7rem;
+  color: var(--color-attention);
+  margin-top: 1%;
+}
+
+/* ===== PLATAFORM ===== */
+.plataform {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+}
+
+.plataform_right {
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plataform_left {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title_alt {
+  text-align: left;
+  font-weight: bold;
+  padding: 1%;
+}
+
+.text_alt {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 200;
+  opacity: 80%;
+  padding: 1%;
+}
+
+.button_sign {
+  background-color: var(--color-button);
+  color: var(--color-text);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 25%;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* ===== SCREEN ===== */
+.screen {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+}
+
+.screen_right {
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.screen_left {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.screen_right > button {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+  opacity: 80%;
+  width: 10rem;
+  padding: 1%;
+  margin-left: 1%;
+}
+
+/* ===== DOWNLOADS ===== */
+.downloads {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.downloads_right,
+.downloads_left {
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== DISPOSITIVOS ===== */
+.dispositivos {
+  width: 100vw;
+  display: flex;
+  padding: 10%;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_content {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_img {
+  margin-left: 50%;
+  width: 7rem;
+}
+
+.footer_data {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.footer_link {
+  text-decoration: none;
+  opacity: 80%;
+  font-size: 1rem;
+  margin: 1rem;
+  color: var(--color-text);
+}
+
+.footer_data a:hover {
+  color: var(--color-button);
+}
+
+.footer_data a:active {
+  color: var(--color-attention);
+}
+
+.footer_info {
+  opacity: 40%;
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 1rem;
+}
