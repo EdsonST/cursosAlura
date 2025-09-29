@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carousel.css");
+@import url("../styles/contact.css");
+@import url("../styles/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color_background: #ebecee;
+  --color_background_menu: #ffffff;
+  --color_title_menu: #eb9b00;
+  --color_itens_menu: #002f52;
+  --color_links: #474646;
+  --color_link_title: #858585;
+  --font-primary: "Poppins";
+  --font-secondary: "Josefin Sans";
+}
+
+body {
+  background-color: var(--color_background);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+}

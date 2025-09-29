@@ -1,0 +1,158 @@
+header {
+  background-color: var(--color_background_menu);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header_menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../Assets/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container_img {
+  padding: 1em;
+}
+
+.list_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 52vw;
+}
+
+.container_button:checked ~ .list_menu {
+  display: block;
+}
+
+.list_title,
+.list_item {
+  padding: 1em;
+  background-color: var(--color_background_menu);
+}
+
+.list_title {
+  color: var(--color_title_menu);
+  font-weight: 700;
+}
+
+.list_item {
+  color: var(--color_itens_menu);
+}
+
+.list_item_link {
+  background: var(--color_itens_menu);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.container_button:checked ~ .container_label > .header_menu {
+  background-image: url("../Assets/menuwhite.svg");
+}
+
+.container_button:checked ~ .container_label {
+  background: var(--color_itens_menu);
+}
+
+.container_button,
+.container_title,
+.options,
+.container_text {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container_title,
+  .container_bold {
+    font-family: var(--font-secondary);
+    font-size: 35px;
+    margin-top: 7%;
+  }
+
+  .container_title {
+    font-weight: 400;
+    display: block;
+  }
+
+  .container_bold {
+    font-weight: 700;
+  }
+
+  .options {
+    display: flex;
+  }
+
+  .options_itens {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0 2em;
+  }
+
+  .options_link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .container_img_transparent {
+    display: none;
+  }
+
+  .options_button:checked ~ .options_label > .options_itens {
+    background: var(--color_itens_menu);
+    color: var(--color_background_menu);
+  }
+
+  .options_itens {
+    padding: 2em 1em;
+  }
+
+  .options_button:checked ~ .list_menu {
+    display: block;
+    width: auto;
+  }
+  .options_button {
+    display: none;
+  }
+
+  .list_item:hover {
+    background: var(--color_itens_menu);
+  }
+
+  .list_item:hover > .list_item_link {
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .container_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  header {
+    padding: 0 2em;
+  }
+
+  .options {
+    margin-right: auto;
+  }
+
+  .container_text {
+    display: block;
+  }
+}
